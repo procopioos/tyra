@@ -20,6 +20,7 @@ class Banner {
   ~Banner();
 
   void show(Renderer* renderer);
+  
 };
 
 }  // namespace Tyra

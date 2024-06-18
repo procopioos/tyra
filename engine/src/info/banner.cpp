@@ -45,7 +45,7 @@ void Banner::show(Renderer* renderer) {
 
   for (int i = 0; i < 2; i++) {
     renderer->beginFrame();
-    renderer->renderer2D.render(&sprite);
+    //renderer->renderer2D.render(&sprite);
     renderer->endFrame();
   }
 
@@ -53,14 +53,16 @@ void Banner::show(Renderer* renderer) {
   texture.core->data = nullptr;
   delete[] bannerData;
 
-  std::cout << "\n";
-  std::cout << "-----------------------------------------\n";
-  std::cout << "        _____        ____   ___\n";
-  std::cout << "          |     \\/   ____| |___|\n";
-  std::cout << "          |     |   |   \\  |   |\n";
-  std::cout << "-----------------------------------------\n";
-  std::cout << "Copyright 2022\n";
-  std::cout << "Repository: https://github.com/h4570/tyra\n";
+  printf("\n");
+  printf("  ______                \n");
+  printf(" /_  __/_  ___________ _\n");
+  printf("  / / / / / / ___/ __ `/\n");
+  printf(" / / / /_/ / /  / /_/ / \n");
+  printf("/_/ /__, /_/   /___,_/  \n");
+  printf("   /____/              \n");
+  std::cout << "Copyright 2024\n";
+  std::cout << "Original Repository: https://github.com/h4570/tyra\n";
+  std::cout << "Forked by @procopioos :p\n";
   std::cout << "Licensed under Apache License 2.0\n";
   std::cout << "Version: ";
   std::cout << Version::toString().c_str();
