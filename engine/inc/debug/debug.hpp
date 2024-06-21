@@ -59,7 +59,7 @@ class TyraDebug {
   static void trap(const char* file, int line, Args... args) {
     std::stringstream ss1;
     ss1 << "\n";
-    ss1 << "==============  TYRA  ==============\n";
+    ss1 << "==============  Uh oh!  ==============\n";
     ss1 << "| Assertion failed!\n";
     ss1 << "|\n";
 

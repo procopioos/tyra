@@ -14,6 +14,7 @@
 #include "./audio_adpcm.hpp"
 #include "./audio_song.hpp"
 
+
 namespace Tyra {
 
 /** Class responsible for audio. */
@@ -28,7 +29,7 @@ class Audio {
   AudioAdpcm adpcm;
 
   void work();
-
+  
  private:
   ee_thread_t thread;
   int threadId;

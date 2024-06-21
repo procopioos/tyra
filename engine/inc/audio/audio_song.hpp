@@ -66,7 +66,6 @@ class AudioSong {
   std::size_t getListenersCount() const;
 
   void work();
-
  private:
   bool songLoaded, songPlaying, songFinished;
   u8 tyraVolume, audsrvVolume;

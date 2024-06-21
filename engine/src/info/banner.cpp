@@ -1,11 +1,15 @@
 /*
-# _____        ____   ___
-#   |     \/   ____| |___|
-#   |     |   |   \  |   |
-#-----------------------------------------------------------------------
-# Copyright 2022-2022, tyra - https://github.com/h4570/tyrav2
+#  ______                
+# /_  __/_  ___________ _
+#  / / / / / / ___/ __ `/
+# / / / /_/ / /  / /_/ / 
+#/_/ /__, /_/   /___,_/  
+#   /____/              
+# Copyright 2022-2024, tyra - https://github.com/h4570/tyrav2
+# Forked by @procopioos :p
 # Licensed under Apache License 2.0
 # Sandro Sobczyński <sandro.sobczynski@gmail.com>
+# Simone Procopio <procopiosimone9@gmail.com>
 */
 
 #include "info/banner.hpp"
@@ -45,7 +49,6 @@ void Banner::show(Renderer* renderer) {
 
   for (int i = 0; i < 2; i++) {
     renderer->beginFrame();
-    //renderer->renderer2D.render(&sprite);
     renderer->endFrame();
   }
 
