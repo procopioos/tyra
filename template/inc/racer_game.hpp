@@ -14,6 +14,7 @@ class RacerGame : public Tyra::Game {
   void audioHandling(char* audioFile, char* funct, bool loop, int vol, int chan);
  private:
   Tyra::Engine* engine;
+  audsrv_adpcm_t* sample;
 };
 
 }  // namespace Racer

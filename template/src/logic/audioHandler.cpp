@@ -24,6 +24,14 @@ namespace Racer {
             engine->audio.song.setVolume(vol);
             engine->audio.song.play();
         }
+        if (funct == "sfx") {
+            sample = engine->audio.adpcm.load(FileUtils::fromCwd(audioFile));
+            engine->audio.adpcm.setVolume(vol, chan);
+            if (engine->audio.adpcm.tryPlay(sample, 0) == ADPCM_CHANNEL_USED) {
+                    TYRA_WARN("Channel is already being used. Try another one!");
+            }
+
+        }
 
     }
 }
